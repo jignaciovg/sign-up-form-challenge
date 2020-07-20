@@ -116,5 +116,37 @@ footer{
     html{
         background-image: url(../images/bg-intro-desktop.png);
     }
+    .Container{
+        display: inline-flex;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
     
+    .FirstContent{
+        width: 50%;
+        padding-left: 8rem;
+    }
+    .SecondContent{
+        width: 50%;
+        padding-right: 10rem;
+    }
+    
+    .FirstContent h2{
+        font-size: 32px;
+        text-align: left;
+        padding: 0;
+        padding-top: 8rem;
+        padding-right: 9rem;
+    }
+    .FirstContent p{
+        text-align: left;
+        font-size: 16px;
+        margin-right: 3rem;
+    }
+    
+    .SecondContent form{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        box-shadow: 0px 7px 0px hsl(0, 60%, 65%);
+    }
 }
