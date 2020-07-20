@@ -1,11 +1,113 @@
 html{
+    font-family: 'Poppins';
     font-size: 16px;
+    background-color:hsl(0, 100%, 74%);
+    color: white;
+}
+
+.btnTry{
+    justify-content: center;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 5px;
+    box-shadow: 0px 7px 0px hsl(0, 60%, 65%);
+}
+
+.btnSubmit{
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px hsl(154, 59%, 42%);
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.SecondContent form{
+    background-color: white;
+    border-radius: 5px;
+}
+.SecondContent .pby{
+    color: gray;
+}
+
+.SecondContent .pterm{
+    color: hsl(0, 100%, 74%);
+}
+input{
+    text-indent: 16px;
+}
+
+footer{
+    text-align: center;
+    background-color: hsl(0, 100%, 70%);
 }
 
 /*MEDIA QUERY*/
 @media(min-width:375px){
     html{
         background-image: url(../images/bg-intro-mobile.png);
+    }
+    .FirstContent{
+        text-align: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .FirstContent h2{
+        margin-top: 6rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .btnTry{
+        text-align: center;
+        margin-top: 4rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 1.5rem;
+        
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .btnTry p{
+        display: inline;
+        font-size: 13px;
+    }
+    .SecondContent form{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 1rem;
+    }
+    .textbox{
+        width:97%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        color: gray;
+        font-weight: bold;
+    }
+    .btnSubmit{
+        width: 100%;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-bottom: .3rem;
+        border: none;
+    }
+    
+    .policy{
+        text-align: center;
+        margin-top: .1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .policy p{
+        display: inline;
+        font-size: 12px;
     }
 }
 
@@ -14,4 +116,5 @@ html{
     html{
         background-image: url(../images/bg-intro-desktop.png);
     }
+    
 }
