@@ -1,0 +1,17 @@
+html{
+    font-size: 16px;
+}
+
+/*MEDIA QUERY*/
+@media(min-width:375px){
+    html{
+        background-image: url(../images/bg-intro-mobile.png);
+    }
+}
+
+
+@media(min-width:1440px){
+    html{
+        background-image: url(../images/bg-intro-desktop.png);
+    }
+}
