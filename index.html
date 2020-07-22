@@ -33,7 +33,7 @@
     <div class="form-control">
         <div class="inputContainer">
             <img class="icon" id="first_icon_error" src="images/icon-error.svg">
-            <input class="textbox" type="text" id="txtFirstName" name="fname" placeholder="First Name">
+            <input class="textbox" type="text" id="txtFirstName" name="fname" placeholder="First Name" onfocus="this.placeholder = ''"onblur="this.placeholder = 'First Name'">
         </div>
         <div class="error" id="first_error">
             First Name cannot be empty
@@ -43,7 +43,7 @@
     <div class="form-control">
         <div class="inputContainer">
             <img class="icon" id="last_icon_error" src="images/icon-error.svg">
-            <input class="textbox" type="text" id="txtLastName" name="lname" placeholder="Last Name">
+            <input class="textbox" type="text" id="txtLastName" name="lname" placeholder="Last Name" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Last Name'">
         </div>
         <div class="error" id="last_error">
             Last Name cannot be empty
@@ -53,7 +53,7 @@
     <div class="form-control">
         <div class="inputContainer">
             <img class="icon" id="email_icon_error" src="images/icon-error.svg">
-            <input class="textbox" type="text" id="txtEmail" name="email" placeholder="Email Address">
+            <input class="textbox email" type="text" id="txtEmail" name="email" placeholder="Email Address" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Email Address'">
         </div>
         <div class="error" id="email_error">
             Looks like this is not an email
@@ -63,7 +63,7 @@
     <div class="form-control">
         <div class="inputContainer">
             <img class="icon" id="pass_icon_error" src="images/icon-error.svg">
-            <input class="textbox" type="password" id="txtPassword" name="pssw" placeholder="Password">
+            <input class="textbox" type="password" id="txtPassword" name="pssw" placeholder="Password" onfocus="this.placeholder = ''"onblur="this.placeholder = 'Password'">
         </div>
         <div class="error" id="pass_error">
             Password cannot be empty
