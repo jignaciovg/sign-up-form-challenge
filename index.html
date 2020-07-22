@@ -15,6 +15,7 @@
 </head>
 <body>
     <div class="Container">
+        
     <div class="FirstContent">
     <h2>Learn to code by watching others</h2>
     <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
@@ -22,37 +23,72 @@
     </div> 
     
     <div class="SecondContent">    
-    
     <div class="btnTry">
     <p class="bold">Try it free 7 days</p> 
     <p>then $20/mo. thereafter</p>
     </div>
         
-    <form>
-    <input class="textbox" type="text" id="txtFirstName" name="fname" placeholder="First Name">
+    <form id="form" class="form">
+    <div class="texts">
+    <div class="form-control">
+        <div class="inputContainer">
+            <img class="icon" id="first_icon_error" src="images/icon-error.svg">
+            <input class="textbox" type="text" id="txtFirstName" name="fname" placeholder="First Name">
+        </div>
+        <div class="error" id="first_error">
+            First Name cannot be empty
+        </div>
+    </div>
     <br>
-    <input class="textbox" type="text" id="txtLastName" name="lname" placeholder="Last Name">
+    <div class="form-control">
+        <div class="inputContainer">
+            <img class="icon" id="last_icon_error" src="images/icon-error.svg">
+            <input class="textbox" type="text" id="txtLastName" name="lname" placeholder="Last Name">
+        </div>
+        <div class="error" id="last_error">
+            Last Name cannot be empty
+        </div>
+    </div>
     <br>
-    <input class="textbox" type="email" id="txtEmail" name="email" placeholder="Email Address">
+    <div class="form-control">
+        <div class="inputContainer">
+            <img class="icon" id="email_icon_error" src="images/icon-error.svg">
+            <input class="textbox" type="text" id="txtEmail" name="email" placeholder="Email Address">
+        </div>
+        <div class="error" id="email_error">
+            Looks like this is not an email
+        </div>
+    </div>
     <br>
-    <input class="textbox" type="password" id="txtPassword" name="pssw" placeholder="Password">
+    <div class="form-control">
+        <div class="inputContainer">
+            <img class="icon" id="pass_icon_error" src="images/icon-error.svg">
+            <input class="textbox" type="password" id="txtPassword" name="pssw" placeholder="Password">
+        </div>
+        <div class="error" id="pass_error">
+            Password cannot be empty
+        </div>
+    </div>
     <br>
-    <input class="btnSubmit" type="submit" value="Claim your free trial ">
-    
+    </div>
+    <input class="btnSubmit" type="button" onclick="loginForm()" value="Claim your free trial">
+   
     <div class="policy">
         <p class="pby">By clicking the button, you are agreeing to our</p>
         <p class="bold pterm">Terms and Services</p>
     </div>
-        
     </form>    
     </div>  
         
     </div>
+    
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://github.com/jignaciovg">José Ignacio Vaqueiro González</a>.
     </p>
   </footer>
+    <!-- Script Login -->
+  <script src="JS/login.js"></script>
 </body>
 </html>

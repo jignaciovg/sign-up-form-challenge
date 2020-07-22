@@ -12,6 +12,20 @@ html{
     box-shadow: 0px 7px 0px hsl(0, 60%, 65%);
 }
 
+.textbox{
+        width:100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-bottom: 0rem;
+        color: gray;
+        font-weight: bold;
+        border-radius: 3px;
+        border-width: 1px;
+        border: 1px solid lightgray;
+    }
+
+
+
 .btnSubmit{
     background-color: hsl(154, 59%, 51%);
     border-radius: 5px;
@@ -19,7 +33,19 @@ html{
     text-transform: uppercase;
     color: white;
     font-weight: 500;
+    
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: .3rem;
+    border: none;
 }
+
+.btnSubmit:hover{
+        cursor: pointer;
+        border: none;
+    }
 
 .bold{
     font-weight: bold;
@@ -36,9 +62,47 @@ html{
 .SecondContent .pterm{
     color: hsl(0, 100%, 74%);
 }
-input{
+
+.inputContainer input{
+    width: 100%;
     text-indent: 16px;
 }
+
+.inputContainer{
+    width: 100%;
+}
+
+.inputContainer img{
+    position: absolute;
+}
+
+.icon{
+    padding: 13px;
+    display: inline-block;
+    justify-content: center;
+    right: 40px;
+}
+
+.inputContainer #first_icon_error,
+.inputContainer #last_icon_error,
+.inputContainer #email_icon_error,
+.inputContainer #pass_icon_error{
+    display: none;
+}
+
+.form-control #first_error,
+    .form-control #last_error,
+    .form-control #email_error,
+    .form-control #pass_error
+    {
+        color: red;
+        float: right;
+        font-size: 11px;
+        font-style: italic;
+        margin-top: 7px;
+        margin-bottom: 13px;
+        display: none;
+    }
 
 footer{
     text-align: center;
@@ -82,21 +146,9 @@ footer{
         margin-right: 1rem;
         padding: 1rem;
     }
-    .textbox{
-        width:97%;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        margin-bottom: 1rem;
-        color: gray;
-        font-weight: bold;
-    }
-    .btnSubmit{
-        width: 100%;
-        text-align: center;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        margin-bottom: .3rem;
-        border: none;
+    
+    .texts{
+        padding-right: .5rem;
     }
     
     .policy{
@@ -130,12 +182,16 @@ footer{
         width: 50%;
         padding-right: 10rem;
     }
+    .icon{
+        right: 14rem;
+    }
     
     .FirstContent h2{
-        font-size: 32px;
-        text-align: left;
+        font-size: 3rem;
+        font-weight: bold;
+        text-align:left;
         padding: 0;
-        padding-top: 8rem;
+        padding-top: 9rem;
         padding-right: 9rem;
     }
     .FirstContent p{
@@ -145,8 +201,7 @@ footer{
     }
     
     .SecondContent form{
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding: 2rem;
         box-shadow: 0px 7px 0px hsl(0, 60%, 65%);
     }
 }
